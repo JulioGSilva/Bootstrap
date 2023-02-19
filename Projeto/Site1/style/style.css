@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(206, 206, 206);
+    color: black;
+    padding: 0px;
+    margin: 0px;
+}
+
+nav {
+    background-color: black;
+    color: purple;
+    padding: 5px;
+}
+
+div.nav1 > h3 {
+    display: inline-block;
+    padding: 10px;
+    right: 15px;
+    position: relative;
+
+}
+
+div.row {
+    text-align: center;
+}
+
+div.row > div.col-1 > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
