@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Formatação de Textos</title>
+</head>
+<body>
+    <div class="container">
+        <p class="fw-bold">texto com peso negrito</p>
+        <p class="fw-semibold">texto semi-negrito</p>
+        <p class="fw-normal">texto normal</p>
+        <p class="fw-light">texto com peso leve</p>
+        <p class="fst-italic">texto italico</p>
+        <p class="fst-normal">texto com estilo normal</p>
+
+        <!-- altura da linha, monoespaçada -->
+        <p class="lh-lg font-monospace text-decoration-underline" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, porro. Ratione placeat at minima illo asperiores recusandae nisi cum nobis velit labore. Illo ratione repellat, nemo animi commodi laudantium ea!</p>
+        <!-- link -->
+        <a href="#" class="text-reset fw-bold text-decoration-none">Link Qualquer</a>
+        <br>
+        <hr>
+    </div>
+    <div class="container">
+        <h1>Exercício</h1>
+        <input type="button" value="Mostrar Texto" onclick="show()">
+        <p class="text-truncate lead" id="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis a asperiores et soluta alias voluptas harum optio odio nihil eum maxime itaque nemo distinctio eveniet dicta voluptatibus aliquam, corporis minima id. Tempore blanditiis beatae, eaque libero qui cupiditate nemo ab omnis dolore. Commodi quis quaerat at labore suscipit quo, omnis deserunt dolore molestiae voluptate nesciunt. Eum modi illo voluptatem aperiam ullam quas nisi doloremque iusto libero architecto commodi asperiores consequatur ea tempore nobis rem assumenda inventore, quos reiciendis tempora totam dolore. Minus vero ullam labore amet consequuntur adipisci et voluptate ab, deserunt possimus doloribus, saepe incidunt quibusdam eos? Reiciendis, molestiae.</p>
+
+        <script>
+            function show() {
+                let div = document.getElementById("texto")
+                if (div.className == "text-truncate lead") {
+                    div.className = " lead";
+                } else {
+                    div.className = "text-truncate lead";
+                }
+            }
+        </script>
+    </div>
+</body>
+</html>
