@@ -14,9 +14,40 @@
     <title>Configuraçãoes de Visibilidade</title>
 </head>
 <body>
-    <div class="p-5 bg-danger"></div>
-    <div class="p-4 col-3 d-blok m-3 bg-primary"></div>
-    <div class="p-4 col-3 d-blok m-3 bg-success"></div>
-    <div class="p-4 col-3 d-blok m-3 bg-warning"></div>
+    <header class="d-print-none">
+        <div class="p-5 bg-danger"></div>
+        <div class="p-4 col-3 d-sm-none d-print-block d-blok m-3 bg-primary"></div>
+        <div class="p-4 col-3 d-md-none d-blok m-3 bg-success"></div>
+        <div class="p-4 col-3 d-print-none d-blok m-3 bg-warning"></div>
+    </header>
+    <hr>
+    <header class="p-3 text-bg-dark">
+        <div class="container">
+            <h1 class="display-1">Cabeçalho</h1>
+        </div>
+    </header>
+    <article class="container my-3">
+        <h1 class="mb-4 d-print-none">Título do Artigo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis molestiae deserunt tenetur veritatis, rem aperiam officiis reprehenderit inventore est, debitis qui ex maiores omnis reiciendis quisquam. Facilis consectetur iste delectus.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam laborum voluptate illo nesciunt esse necessitatibus atque aliquid? Nobis eveniet reprehenderit in, sed architecto minima cum nesciunt dolorum mollitia. Unde, eum.</p>
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, placeat ipsum? Eaque quia, sed nisi a voluptatum vero, inventore ipsam quis repellat at animi distinctio, ratione quisquam odit unde fugiat?</p>
+
+        <p class="d-none d-print-block">Fonte: meusite.com.br</p>
+    </article>
+    <hr>
+    <div class="p-4 col-3 m-3 bg-primary"></div>
+    <div class="p-4 col-3 m-3 bg-success invisible"></div>
+    <div class="p-4 col-3 m-3 bg-warning"></div>
+    <hr>
+    <div class="container bg-info mt-3">
+        <div class="row">
+            <div class="border p-2 col-3 overflow-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum accusamus recusandae sapiente libero sed culpa modi quo repellendus tempore? Accusamus odio neque ut hic quasi reprehenderit atque aut reiciendis est.</div>
+            <div class="border p-2 col-3 overflow-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nulla impedit mollitia amet soluta ea eius veniam ab excepturi. Culpa quia odit deserunt rem commodi sequi, doloremque minima quis perspiciatis a cumque saepe, itaque ad recusandae adipisci libero quos doloribus.</div>
+            <div class="border p-2 col-3 overflow-visible">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat tempore perspiciatis fugit tempora dolor vero fugiat iusto. Quis rerum quia ipsum, totam quae fugiat dicta? Nam perferendis atque possimus, dolorum, quaerat porro ea minima, accusamus veritatis tempore quos quae obcaecati?</div>
+            <div class="border p-2 col-3 overflow-scroll">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita maxime voluptates totam iste dicta minus soluta quisquam, sit eaque labore alias doloribus autem. Exercitationem mollitia asperiores, ratione veritatis id aspernatur ipsum, repellat autem consectetur praesentium quis. Ducimus voluptates qui veniam.</div>
+        </div>
+    </div>
 </body>
 </html>

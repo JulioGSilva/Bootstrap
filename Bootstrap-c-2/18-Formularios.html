@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <title>Formulários</title>
+</head>
+<body>
+    <div class="container p-5">
+        <form action="">
+            <div class="mb-3">
+                <label for="email" class="form-label form-control-plaintext">E-mail:</label>
+                <input type="email" id="email" class="form-control form-control-plaintext" placeholder="Digite seu E-mail">
+                <div class="form-text">Não compartiharemos seus dados com terceireos</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="senha" class="form-label">Senha</label>
+                <input type="text" class="form-control">
+            </div>
+
+            <div class="mb-3 form-check">
+                <input ktype="checkbox" id="lembrar" class="form-check-input">
+                <label for="lembrar" class="form-check-label">Lembre de mim</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Entrar</button>
+        </form>
+        <hr>
+        <input type="file" name="arquivo" id="arquivo" class="form-control">
+        <input type="color" name="color" id="cor" class="form-control">
+        <hr>
+        <div class="mb-3">
+            <label for="" class="form-label">Cidade</label>
+
+            <input type="text" class="form-control" placeholder="Digite para buscar..." list="cidades">
+
+            <datalist id="cidades">
+                <option value="Cidade 1"></option>
+                <option value="Cidade 2"></option>
+                <option value="Cidade 3"></option>
+                <option value="Cidade 4"></option>
+                <option value="Cidade 5"></option>
+                <option value="Cidade 6"></option>
+            </datalist>
+        </div>
+    </div>
+</body>
+</html>

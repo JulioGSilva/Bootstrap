@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+article {
+
+}
+
+.tam {
+    padding: 5px;
+    margin: 15px;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 190px;
+    width: 390px;
+}
